@@ -54,10 +54,14 @@
         #media-session.enable = true;
     };
 
+    # ------- Shell ------- #
+    programs.fish.enable = true;
+
     # ------- Users ------- #
     users.users.kumo = {
         isNormalUser = true;
         description = "Jorokumo";
+	shell = pkgs.fish;
         extraGroups = [ "networkmanager" "wheel" ];
         packages = with pkgs; [
             kdePackages.kate
@@ -67,6 +71,11 @@
 
     # ------- Programs ------- #
     programs.firefox.enable = true;
+
+    programs.steam = {
+
+	enable = true;
+    };
 
     nixpkgs.config.allowUnfree = true;
 

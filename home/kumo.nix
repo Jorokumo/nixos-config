@@ -2,6 +2,13 @@
 
 {
 
+    imports = [
+
+	../modules/fish/fish.nix
+	../modules/kitty/kitty.nix
+	../modules/neovim/neovim.nix
+    ];
+
     # ------- Version ------- #
     home.stateVersion = "25.11";
 
@@ -13,11 +20,14 @@
     home.packages = with pkgs; [
 	
         # --- Social --- #
-	      vesktop
+	vesktop
 
         # --- Extras --- #
-	      fastfetch
+	fastfetch
         htop
+	
+	# --- Fonts --- #
+	nerd-fonts.departure-mono
 	
     ];
 
