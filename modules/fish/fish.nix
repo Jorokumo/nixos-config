@@ -4,29 +4,29 @@
 
     programs.fish = {
 
-	enable =true;
+        enable =true;
 	
-	# --- Aliases --- #
-	shellAliases = {
+        # --- Aliases --- #
+        shellAliases = {
 	    
-	    # --- Nix --- #
-	    rebuild = "sudo nixos-rebuild switch --flake ~/nixos-config#jorokumo";
-	    update = "sudo nix flake update ~/nixos-config";
+        # --- Nix --- #
+            rebuild = "sudo nixos-rebuild switch --flake ~/nixos-config#jorokumo";
+            update = "sudo nix flake update ~/nixos-config";
 
-	    # --- Navigation --- #
-	    ".." = "cd ..";
-	    "..." = "cd ../..";
+        # --- Navigation --- #
+            ".." = "cd ..";
+            "..." = "cd ../..";
 
-	    # --- General --- #
-	    ll = "ls -la";
-	    mkdir = "mkdir -p";
+        # --- General --- #
+            ll = "ls -la";
+            mkdir = "mkdir -p";
 
-	};
+        };
 
-	# --- Greetings --- #
-	interactiveShellInit = ''
+        # --- Greetings --- #
+        interactiveShellInit = ''
 	    
-	    set fish_greeting ""
-	'';
+            set fish_greeting ""
+        '';
     };
 }

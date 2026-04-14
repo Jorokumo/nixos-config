@@ -61,7 +61,7 @@
     users.users.kumo = {
         isNormalUser = true;
         description = "Jorokumo";
-	shell = pkgs.fish;
+        shell = pkgs.fish;
         extraGroups = [ "networkmanager" "wheel" ];
         packages = with pkgs; [
             kdePackages.kate

@@ -3,10 +3,10 @@
 {
 
     imports = [
-
-	../modules/fish/fish.nix
-	../modules/kitty/kitty.nix
-	../modules/neovim/neovim.nix
+    	
+        ../modules/fish/fish.nix
+        ../modules/kitty/kitty.nix
+        ../modules/neovim/neovim.nix
     ];
 
     # ------- Version ------- #
@@ -20,14 +20,14 @@
     home.packages = with pkgs; [
 	
         # --- Social --- #
-	vesktop
+        vesktop
 
         # --- Extras --- #
-	fastfetch
+        fastfetch
         htop
 	
-	# --- Fonts --- #
-	nerd-fonts.departure-mono
+        # --- Fonts --- #
+        nerd-fonts.departure-mono
 	
     ];
 
